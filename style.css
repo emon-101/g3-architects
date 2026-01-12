@@ -18,6 +18,11 @@ p {
     margin: 16px 0;
 }
 
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 /* Shared Styles */
 
 .display-flex {
@@ -53,6 +58,7 @@ p {
 header {
     background-color: rgba(255, 144, 14, 0.1);
     padding: 0 16px;
+    margin-bottom: 5.5rem;
 }
 
 /* navbar section */
@@ -103,7 +109,41 @@ nav, .banner {
 .banner-img img {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 1.5rem;
 }
+
+/* Team section */
+
+#team {
+    padding: 0 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 700px;
+}
+
+.team-content {
+    max-width: 540px;
+    margin-left: 75px;
+}
+
+.team-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+
+
 
 
 /* Responsive Design */
@@ -122,6 +162,7 @@ nav, .banner {
     p {
         font-size: 0.8rem;
     }
+    /* header */
     nav {
         flex-direction: column;
         gap: 24px;
@@ -140,5 +181,20 @@ nav, .banner {
     .banner-title {
         font-size: 2rem;
         margin-top: 1.25rem;
+    }
+
+    /* Team section */
+    #team {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .team-content {
+        margin: 20px 0;
+    }
+    .team-title {
+        font-size: 1.8rem;
+    }
+    .team-img {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
