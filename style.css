@@ -8,3 +8,137 @@
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
 }
+
+.block {
+    display: block;
+}
+
+p {
+    color: #727272;
+    margin: 16px 0;
+}
+
+/* Shared Styles */
+
+.display-flex {
+    display: flex;
+}
+
+.text-gray {
+    color: #424242;
+}
+
+.text-primary {
+    color: rgba(19, 19, 19, 1);
+}
+
+.btn-primary {
+    color: white;
+    padding: 20px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 16px 0;
+}
+
+.btn-primary:hover {
+    color: #424242;
+    background: white;
+}
+
+/* header section */
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 0 16px;
+}
+
+/* navbar section */
+nav, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.2rem;
+}
+ul li {
+    list-style: none;
+    margin-right: 24px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+}
+
+nav, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* banner section */
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.banner-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Responsive Design */
+
+/* Responsive for mobile */
+@media screen and (max-width: 576px) {
+    /* Shared styles */
+    .btn-primary {
+        padding: 10px 15px;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+    .block {
+        display: inline;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 25px;
+    }
+    .nav-title {
+        font-size: 1.5rem;
+    }
+    ul li a {
+        font-size: 0.8rem;
+    }
+    ul li {
+        margin-right: 1rem;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        margin-top: 1.25rem;
+    }
+}
