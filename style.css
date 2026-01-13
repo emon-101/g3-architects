@@ -220,6 +220,20 @@ nav, .banner {
     margin-bottom: 70px;
 }
 
+/* footer section */
+footer {
+    padding: 35px 0;
+    max-width: 1240px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgba(255, 244, 231, 1);
+    margin-bottom: 130px;
+}
+
+footer p {
+    text-align: center;
+}
+
 
 
 
