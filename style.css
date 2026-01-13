@@ -208,6 +208,7 @@ nav, .banner {
 
 .sponsor-img img {
     width: 165px;
+    filter: grayscale(100%);
 }
 
 .sponsor-img {
