@@ -186,6 +186,40 @@ nav, .banner {
     margin-top: 16px;
 }
 
+/* Sponsor Section */
+#sponsor {
+    padding: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.sponsor-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.sponsor-content p {
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.sponsor-img img {
+    width: 165px;
+}
+
+.sponsor-img {
+    display: grid;
+    gap: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
 
 
 
@@ -246,6 +280,12 @@ nav, .banner {
     .fact-cards {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* sponsor section */
+    .sponsor-img {
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
 }
 
 /* medium size devie */
@@ -263,5 +303,11 @@ nav, .banner {
     /* Facts Section */
     .fact-cards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* sponsor section */
+    .sponsor-img {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 80px;
     }
 }
