@@ -234,6 +234,65 @@ footer p {
     text-align: center;
 }
 
+/* Feature Section */
+
+#feature {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 130px;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature-content p {
+    margin-bottom: 30px;
+}
+
+.feature-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding: 20px;
+    border-left: 4px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    max-width: 460px;
+    color: rgba(19, 19, 19, 1);
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(19, 19, 19, 1);
+}
+
+.feature-img {
+    position: relative;
+}
+
+.experience {
+    padding: 42px 46px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+}
+
+.big-font {
+    font-size: 4rem;
+    font-weight: 700;
+    display: block;
+}
+
 
 
 
@@ -300,6 +359,16 @@ footer p {
         grid-template-columns: 1fr;
         margin-bottom: 50px;
     }
+
+    /* Feature section */
+    #feature {
+        grid-template-columns: 1fr;
+    }
+    .experience {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 /* medium size devie */
@@ -323,5 +392,14 @@ footer p {
     .sponsor-img {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 80px;
+    }
+    /* Feature section */
+    #feature {
+        grid-template-columns: 1fr;
+    }
+    .experience {
+        position: absolute;
+        left: 2px;
+        bottom: -2px;
     }
 }
